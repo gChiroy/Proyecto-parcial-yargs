@@ -33,7 +33,7 @@ const crearArchivo = async (base = 5, listar = false, hasta = 10 ) => {
         const archivo = path.join(carpetaSalida, `tabla-${base}-hasta-${hasta}.txt`);
         
         // Utiliza la ruta completa para escribir el archivo
-        fs.writeFileSync(archivo, salida).strip;
+        fs.writeFileSync(archivo, salida);
 
         return archivo; // Devuelve la ruta completa del archivo
     } catch (err) {
